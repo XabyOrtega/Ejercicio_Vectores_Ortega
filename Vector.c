@@ -2,10 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
+void Ortega(int tamano) {
+    int vector[100];
+
+    srand(time(NULL));
+
+    for (int i = 0; i < tamano; i++) {
+        vector[i] = rand() % 100;
+    }
+
+    printf("Vector Ortega con números aleatorios:\n");
+    for (int i = 0; i < tamano; i++) {
+        printf("%d ", vector[i]);
+    }
+    printf("\n");
+}
+
 int main() {
     int tamano;
-    int Ortega[100];
-
+    
     printf("Ingrese el tamaño del vector (máximo 100): ");
     scanf("%d", &tamano);
 
@@ -14,17 +29,8 @@ int main() {
         return 1;
     }
 
-    srand(time(NULL));
-
-    for (int i = 0; i < tamano; i++) {
-        Ortega[i] = rand() % 100;
-    }
-
-    printf("Vector Ortega con números aleatorios:\n");
-    for (int i = 0; i < tamano; i++) {
-        printf("%d ", Ortega[i]);
-    }
-    printf("\n");
+    Ortega(tamano);
 
     return 0;
 }
+
