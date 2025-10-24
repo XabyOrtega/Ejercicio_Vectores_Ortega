@@ -2,7 +2,7 @@
 
 int main() {
     int tamano;
-    char apellido[100] = "Ortega";
+    int Ortega[100] ;
 
     printf("Ingrese el tamaño del vector (máximo 100): ");
     scanf("%d", &tamano);
@@ -12,8 +12,7 @@ int main() {
         return 1;
     }
 
-    printf("\nEl apellido almacenado en el vector es: %s\n", apellido);
-    printf("El tamaño ingresado del vector fue: %d\n", tamano);
+    printf("El tamaño ingresado del vector Ortega fue: %d\n", tamano);
 
     return 0;
 }
